@@ -18,13 +18,10 @@ function rmCmdGlobal {
         
     fi
 }
-function rmCmdLocal
-	if [ $differFileNameYN == "n" ] || [ $differFileNameYN == "no" ] || [ $differFileNameYN == "N" ] || [ $differFileNameYN == "No" ]
-	        then
-	        echo "Removing $fileName from ~/bin"
-	        rm ~/bin/$fileName
-	        echo "Successfully removed $fileName"
-    fi
+function rmCmdLocal {
+    echo "Removing $fileName from ~/bin"
+	rm ~/bin/$fileName
+	echo "Successfully removed $fileName"
 }
 echo "Please enter the command name you would like to remove."
 read fileName
