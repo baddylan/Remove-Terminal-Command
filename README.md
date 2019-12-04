@@ -3,6 +3,7 @@
 **Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
 
 - [Remove Terminal Command](#remove-terminal-command)
+- [Note](#note)
   - [Installation](#installation)
     - [Installation & Usage](#installation--usage)
   - [Changelog](#changelog)
@@ -13,6 +14,10 @@
 Remove Terminal Command
 =======================
 A simple bash script to remove a terminal command.
+
+Note
+====
+Remove Terminal Command is meant to be used with lanman14444's [Make-Terminal-Command](https://github.com/lanman14444/Make-Terminal-Command).
 
 ## Installation
 
