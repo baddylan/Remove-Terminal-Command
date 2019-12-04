@@ -6,19 +6,17 @@ echo ""
 termuxBin=/data/data/com.termux/files/usr/bin
 
 function rmCmdGlobal {
-        if [ $differFileNameYN == "n" ] || [ $differFileNameYN == "no" ] || [ $differFileNameYN == "N" ] || [ $differFileNameYN == "No" ]
-                then
-                if [ -d /usr/local/bin ]
-                    then
-                    echo "Removing $fileName from /ust/local/bin"
-                    sudo rm /usr/local/bin/$fileName
-                    echo "Successfully removed $fileName"
-                else
-                    echo "Removing $fileName from $termuxBin"
-                    rm $termuxBin/$fileName
-                    echo "Successfully removed $fileName"
-                fi
-        fi
+    if [ -d /usr/local/bin ]
+        then
+        echo "Removing $fileName from /usr/local/bin"
+        sudo rm /usr/local/bin/$fileName
+        echo "Successfully removed $fileName"
+    else
+        echo "Removing $fileName from $termuxBin"
+        rm $termuxBin/$fileName
+        echo "Successfully removed $fileName"
+        
+    fi
 }
 function rmCmdLocal
 	if [ $differFileNameYN == "n" ] || [ $differFileNameYN == "no" ] || [ $differFileNameYN == "N" ] || [ $differFileNameYN == "No" ]
