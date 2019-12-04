@@ -1,3 +1,15 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [Remove Terminal Command](#remove-terminal-command)
+  - [Installation](#installation)
+    - [Installation & Usage](#installation--usage)
+  - [Changelog](#changelog)
+  - [Tested Distros](#tested-distros)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 Remove Terminal Command
 =======================
 A simple bash script to remove a terminal command.
