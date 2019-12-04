@@ -1,0 +1,40 @@
+#!/bin/bash
+echo "This software is covered by GNU GPL v3.0"
+echo "A copy of the licenee can be found at http://www.gnu.org/licenses/gpl-3.0.en.html#content "
+echo ""
+
+termuxBin=/data/data/com.termux/files/usr/bin
+
+function rmCmdGlobal {
+        if [ $differFileNameYN == "n" ] || [ $differFileNameYN == "no" ] || [ $differFileNameYN == "N" ] || [ $differFileNameYN == "No" ]
+                then
+                if [ -d /usr/local/bin ]
+                    then
+                    echo "Removing $fileName from /ust/local/bin"
+                    sudo rm /usr/local/bin/$fileName
+                    echo "Successfully removed $fileName"
+                else
+                    echo "Removing $fileName from $termuxBin"
+                    rm $termuxBin/$fileName
+                    echo "Successfully removed $fileName"
+                fi
+        fi
+}
+function rmCmdLocal
+	if [ $differFileNameYN == "n" ] || [ $differFileNameYN == "no" ] || [ $differFileNameYN == "N" ] || [ $differFileNameYN == "No" ]
+	        then
+	        echo "Removing $fileName from ~/bin"
+	        rm ~/bin/$fileName
+	        echo "Successfully removed $fileName"
+    fi
+}
+echo "Please enter the command name you would like to remove."
+read fileName
+echo "Do you want to remove a system-wide or local command? [Y/N]"
+read sysOrUsr
+if [ $sysOrUsr == "Y" ] || [ $sysOrUsr == "y" ] || [ $sysOrUsr == "Yes" ] || [ $sysOrUsr == "yes" ]
+        then
+    rmCmdGlobal
+        else
+    rmCmdLocal
+fi
