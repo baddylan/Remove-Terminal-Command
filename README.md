@@ -17,7 +17,7 @@ A simple bash script to remove a terminal command.
 
 Note
 ====
-Remove Terminal Command is meant to be used with lanman14444's [Make-Terminal-Command](https://github.com/lanman14444/Make-Terminal-Command).
+Remove Terminal Command is meant to be used with [lanman14444](https://github.com/lanman14444)'s [Make-Terminal-Command](https://github.com/lanman14444/Make-Terminal-Command).
 
 ## Installation
 
